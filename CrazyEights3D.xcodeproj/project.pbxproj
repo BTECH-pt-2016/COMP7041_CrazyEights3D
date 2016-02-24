@@ -15,6 +15,10 @@
 		348A6AC81C72FBA900F75436 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 348A6AC61C72FBA900F75436 /* LaunchScreen.storyboard */; };
 		348A6AD31C72FBA900F75436 /* CrazyEights3DTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 348A6AD21C72FBA900F75436 /* CrazyEights3DTests.m */; };
 		348A6ADE1C72FBA900F75436 /* CrazyEights3DUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 348A6ADD1C72FBA900F75436 /* CrazyEights3DUITests.m */; };
+		34E025B51C7C2B35004EA495 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E025B41C7C2B35004EA495 /* Card.m */; };
+		34E025BB1C7CC60E004EA495 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E025BA1C7CC60E004EA495 /* Deck.m */; };
+		34E025BD1C7D0577004EA495 /* Hand.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E025BC1C7D0577004EA495 /* Hand.m */; };
+		34E025BF1C7D136C004EA495 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E025BE1C7D136C004EA495 /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		348A6AD91C72FBA900F75436 /* CrazyEights3DUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrazyEights3DUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		348A6ADD1C72FBA900F75436 /* CrazyEights3DUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrazyEights3DUITests.m; sourceTree = "<group>"; };
 		348A6ADF1C72FBA900F75436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34E025B41C7C2B35004EA495 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		34E025B61C7C2BD6004EA495 /* Card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		34E025B71C7CC320004EA495 /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		34E025B81C7CC3BB004EA495 /* Hand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hand.h; sourceTree = "<group>"; };
+		34E025B91C7CC449004EA495 /* Deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		34E025BA1C7CC60E004EA495 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		34E025BC1C7D0577004EA495 /* Hand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hand.m; sourceTree = "<group>"; };
+		34E025BE1C7D136C004EA495 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,7 @@
 		348A6AB71C72FBA900F75436 /* CrazyEights3D */ = {
 			isa = PBXGroup;
 			children = (
+				34E025B31C7C2B18004EA495 /* Objects */,
 				348A6ABB1C72FBA900F75436 /* AppDelegate.h */,
 				348A6ABC1C72FBA900F75436 /* AppDelegate.m */,
 				348A6ABE1C72FBA900F75436 /* ViewController.h */,
@@ -138,6 +151,21 @@
 				348A6ADF1C72FBA900F75436 /* Info.plist */,
 			);
 			path = CrazyEights3DUITests;
+			sourceTree = "<group>";
+		};
+		34E025B31C7C2B18004EA495 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				34E025B61C7C2BD6004EA495 /* Card.h */,
+				34E025B41C7C2B35004EA495 /* Card.m */,
+				34E025B71C7CC320004EA495 /* Player.h */,
+				34E025BE1C7D136C004EA495 /* Player.m */,
+				34E025B81C7CC3BB004EA495 /* Hand.h */,
+				34E025BC1C7D0577004EA495 /* Hand.m */,
+				34E025B91C7CC449004EA495 /* Deck.h */,
+				34E025BA1C7CC60E004EA495 /* Deck.m */,
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34E025BD1C7D0577004EA495 /* Hand.m in Sources */,
+				34E025BB1C7CC60E004EA495 /* Deck.m in Sources */,
 				348A6AC01C72FBA900F75436 /* ViewController.m in Sources */,
 				348A6ABD1C72FBA900F75436 /* AppDelegate.m in Sources */,
 				348A6ABA1C72FBA900F75436 /* main.m in Sources */,
+				34E025BF1C7D136C004EA495 /* Player.m in Sources */,
+				34E025B51C7C2B35004EA495 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +530,7 @@
 				348A6AE41C72FBA900F75436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		348A6AE51C72FBA900F75436 /* Build configuration list for PBXNativeTarget "CrazyEights3DTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +539,7 @@
 				348A6AE71C72FBA900F75436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		348A6AE81C72FBA900F75436 /* Build configuration list for PBXNativeTarget "CrazyEights3DUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +548,7 @@
 				348A6AEA1C72FBA900F75436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
